@@ -270,21 +270,21 @@ a:active, a:hover {
 		color: #33337C;
 	}
 	
-	/*.search {
+	.search {
 		background: none !important;
 		border: 0 !important;
 		padding: 0 0 5px 0 !important;
 	}
 	
-	.search input {
+	/*.search input {
 		width: 230px;
 		line-height: 18px;
 		padding: 0 0 0 2px;
-	}
+	}*/
 	
 	.nav-mobile {
 		display: none;
-	} */
+	}
 }
 
 
