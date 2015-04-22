@@ -5,7 +5,7 @@
 /* Slight reset to make the preview have ample padding. */
 .cse .gsc-control-cse,
 .gsc-control-cse {
-  padding: 1em;
+  /* padding: 1em; */
   width: auto;
 }
 .cse .gsc-control-wrapper-cse,
@@ -20,8 +20,8 @@
 .cse .gsc-control-cse,
 .gsc-control-cse {
   font-family: Arial, sans-serif;
-  /* background-color: #ffffff; rimosso background searchbox*/
-  border: 1px solid #ffffff;
+  /* background-color: #ffffff; rimosso background searchbox */
+  /* border: 1px solid #ffffff; */
 }
 .gsc-control-cse .gsc-table-result {
   font-family: Arial, sans-serif;
