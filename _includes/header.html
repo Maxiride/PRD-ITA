@@ -13,25 +13,7 @@
 		</div>
 	</div>
 
-<!-- Google Custmo Search -->
-<div id='cse' style='width: 100%;'>Loading</div>
-<script src='//www.google.com/jsapi' type='text/javascript'></script>
-<script type='text/javascript'>
-google.load('search', '1', {language: 'it', style: src="http://maxiride.github.io/prd-ita/include/minimalist.css"});
-google.setOnLoadCallback(function() {
-  var customSearchOptions = {};
-  var orderByOptions = {};
-  orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
-  customSearchOptions['enableOrderBy'] = true;
-  customSearchOptions['orderByOptions'] = orderByOptions;
-  customSearchOptions['overlayResults'] = true;
-  var customSearchControl =   new google.search.CustomSearchControl('012133250746902336111:qolnfkbbasy', customSearchOptions);
-  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-  var options = new google.search.DrawOptions();
-  options.setAutoComplete(true);
-  customSearchControl.draw('cse', options);
-}, true);
-</script>
+
 
 
 	<!-- Search & Navigation -->
@@ -39,6 +21,27 @@ google.setOnLoadCallback(function() {
 		<a href = "#menu" class = "menu-link has-subnav"><img src = "include/menu.png"></a>
 		<div id = "menu" class = "menu">
 			<ul>
+				<li>
+					<!-- Google Custmo Search -->
+					<div id='cse' style='width: 100%;'>Loading</div>
+					<script src='//www.google.com/jsapi' type='text/javascript'></script>
+					<script type='text/javascript'>
+					google.load('search', '1', {language: 'it', style: src="http://maxiride.github.io/prd-ita/include/minimalist.css"});
+					google.setOnLoadCallback(function() {
+					  var customSearchOptions = {};
+					  var orderByOptions = {};
+					  orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
+					  customSearchOptions['enableOrderBy'] = true;
+					  customSearchOptions['orderByOptions'] = orderByOptions;
+					  customSearchOptions['overlayResults'] = true;
+					  var customSearchControl =   new google.search.CustomSearchControl('012133250746902336111:qolnfkbbasy', customSearchOptions);
+					  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+					  var options = new google.search.DrawOptions();
+					  options.setAutoComplete(true);
+					  customSearchControl.draw('cse', options);
+					}, true);
+					</script>
+				</li>
 				<!-- Core Rulebook -->
 				<li class = "has-subnav">
 					<a href = "#">Manuale Base</a>
