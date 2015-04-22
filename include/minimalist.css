@@ -20,7 +20,7 @@
 .cse .gsc-control-cse,
 .gsc-control-cse {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  /* background-color: #ffffff; rimosso background searchbox*/
   border: 1px solid #ffffff;
 }
 .gsc-control-cse .gsc-table-result {
