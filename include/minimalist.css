@@ -37,7 +37,7 @@
 /* Search form */
 .cse form.gsc-search-box,
 form.gsc-search-box {
-  padding: 8px 4px 2px 6px;
+  padding: .1px 0px 2px 0px;
   margin-bottom: 6px;
 }
 .cse .gsc-branding-text,
@@ -62,7 +62,7 @@ input.gsc-input {
   font-family: inherit;
   border: 1px solid #BBB;
   padding: 3px 6px;
-  width: 99%;
+  width: 100%;
   font-size: 16px;
 }
 /* Search button */
