@@ -19,17 +19,26 @@
 			<ul>
 				<!-- Search -->
 				<li class = "search">
-					<form action = "http://paizo.com/search" method = "get">
-						<input id = "searchBox" maxlength = "256" type = "text" name = "q" placeholder = "Search" />
-						<input type = "hidden" name = "what" value = "prd" />
-					</form>
+				<script>
+				  (function() {
+					var cx = '012133250746902336111:qolnfkbbasy';
+					var gcse = document.createElement('script');
+					gcse.type = 'text/javascript';
+					gcse.async = true;
+					gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+						'//www.google.com/cse/cse.js?cx=' + cx;
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>
 				</li>
 				<!-- Core Rulebook -->
 				<li class = "has-subnav">
 					<a href = "#">Manuale Base</a>
 					<ul class = "level-2">
 						<li><a href = "core/gettingStarted.html">Per iniziare</a></li>
-						<li><a href = "/core/races.html">Razze</a></li>
+						<li><a href = "core/races.html">Razze</a></li>
 						<li><a href = "classes.html">Classi</a></li>
 						<li><a href = "usingSkills.html">Abilitàs</a></li>
 						<li><a href = "skillDescriptions.html">Descrizione delle Abilità</a></li>
