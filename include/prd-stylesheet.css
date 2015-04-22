@@ -270,7 +270,7 @@ a:active, a:hover {
 		color: #33337C;
 	}
 	
-	.search {
+	/*.search {
 		background: none !important;
 		border: 0 !important;
 		padding: 0 0 5px 0 !important;
@@ -284,7 +284,7 @@ a:active, a:hover {
 	
 	.nav-mobile {
 		display: none;
-	}
+	} */
 }
 
 
@@ -543,7 +543,7 @@ tfoot td {
 		white-space: normal !important;
 	}
 	
-	.search input {
+	/*.search input {
 		width: 95%;
 		line-height: 25px;
 		padding: 0 0 0 5px;
@@ -552,7 +552,7 @@ tfoot td {
 	.search {
 		padding: 10px 0 !important;
 		text-align: center;
-	}
+	}*/
 	
 	.nav-text {
 		display: none;
