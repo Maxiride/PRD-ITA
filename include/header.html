@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<div class = "header">
-<!-- Chiamata a footnotes -->
+<!-- Chiamata a footnotes 
 <script src="include/js/footnotes.js" type="text/javascript"></script>
+-->
 
 <!-- Logos -->
 	<div class = "header-content">
@@ -24,30 +24,38 @@
 				<li class="search">
 					<!-- Google Custmo Search -->
 					<div id='cse' style='width: 100%;'>Loading</div>
-					<script src='//www.google.com/jsapi' type='text/javascript'></script>
 					<script type='text/javascript'>
-					google.load('search', '1', {language: 'it', style: src="http://maxiride.github.io/prd-ita/include/minimalist.css"});
-					google.setOnLoadCallback(function() {
-					  var customSearchOptions = {};
-					  var orderByOptions = {};
-					  orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
-					  customSearchOptions['enableOrderBy'] = true;
-					  customSearchOptions['orderByOptions'] = orderByOptions;
-					  customSearchOptions['overlayResults'] = true;
-					  var customSearchControl =   new google.search.CustomSearchControl('012133250746902336111:qolnfkbbasy', customSearchOptions);
-					  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-					  var options = new google.search.DrawOptions();
-					  options.setAutoComplete(true);
-					  customSearchControl.draw('cse', options);
-					}, true);
+					var lProtocol = window.location.protocol;
+					if(lProtocol == 'http:'){
+						console.log('Http true');
+						$.getScript('http://www.google.com/jsapi');
+						google.load('search', '1', {language: 'it', style: src="http://maxiride.github.io/prd-ita/include/minimalist.css"});
+						google.setOnLoadCallback(function() {
+						  var customSearchOptions = {};
+						  var orderByOptions = {};
+						  orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
+						  customSearchOptions['enableOrderBy'] = true;
+						  customSearchOptions['orderByOptions'] = orderByOptions;
+						  customSearchOptions['overlayResults'] = true;
+						  var customSearchControl =   new google.search.CustomSearchControl('012133250746902336111:qolnfkbbasy', customSearchOptions);
+						  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+						  var options = new google.search.DrawOptions();
+						  options.setAutoComplete(true);
+						  customSearchControl.draw('cse', options);
+						}, true);
+					}
+					else if(lProtocol == 'file:'){
+					console.log('File true');
+					$( "#cse" ).replaceWith( "<div id='cse' style='width: 100%;'>Offline Mode</div>" );
+					};
 					</script>
 				</li>
 				<!-- Core Rulebook -->
 				<li class = "has-subnav">
 					<a href = "#">Manuale Base</a>
 					<ul class = "level-2">
-						<li><a href = "core/gettingStarted.html">Per iniziare</a></li>
-						<li><a href = "core/races.html">Razze</a></li>
+						<li><a href = "gettingStarted.html">Per iniziare</a></li>
+						<li><a href = "races.html">Razze</a></li>
 						<li><a href = "classes.html">Classi</a></li>
 						<li><a href = "usingSkills.html">Abilitàs</a></li>
 						<li><a href = "skillDescriptions.html">Descrizione delle Abilità</a></li>
@@ -312,4 +320,3 @@
 			</ul>
 		</div>
 	</div>
-</div>

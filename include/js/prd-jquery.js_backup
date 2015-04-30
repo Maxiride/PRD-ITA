@@ -2,28 +2,27 @@ var basePath = "/prd-ita/";
 var myScroll;
 
 
-$(function(){
+$(function() {
 	$('body').addClass('js');
 	var menu = $('#menu'),
 		menulink = $('.menu-link'),
 		menuTrigger = $('.has-subnav > a');
-		anchor = $('#anchor');
 	
-	anchor.on('click', '.menu-link', function(e) {
-		console.log('menulink clicked');
+	menulink.on('click', function(e) {
+		console.log('menulink cliked');
 		e.preventDefault();
 		menulink.toggleClass('active');
 		menu.toggleClass('active');
 	});
 	
-	/* Espande menu e scambia +/- */
-	anchor.on('click', '.has-subnav > a', function(e) {
-		console.log('menutrigger clicked');
+	menuTrigger.on('click', function(e) {
+		console.log('menutrugger cliked');
 		e.preventDefault();
 		$(this).toggleClass('active').next('ul').toggleClass('active');
 	});
 
-	anchor.on('click', 'a[href*=#]:not([href=#])', function() {
+	$('a[href*=#]:not([href=#])').on('click', function() {
+		console.log('ahref?');
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -43,7 +42,7 @@ function buildNavPath() {
 	var navPathElement = $('#nav-path');
 	if (globalNavPath && navPathElement)
 	{
-		navPathElement.append("<a href='/prd-ita/'>PRD Home</a>");
+		navPathElement.append("<a href='/pathfinderRPG/prd'>PRD Home</a>");
 
 		for(x = 0 ; x < globalNavPath.length ; x++)
 		{
@@ -52,7 +51,7 @@ function buildNavPath() {
 		}
 		navPathElement.append(" / <a href='#'>" + globalTitle + "</a>");
 	}
-};
+}
 
 function highlightNavLocation(navPath) {
 	if (navPath == undefined || navPath == null || navPath.length <= 0) {

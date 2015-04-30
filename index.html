@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <head>
 	<meta charset = "utf-8">
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
@@ -6,8 +8,7 @@
 </head>
 
 <body>
-
-<?php include ('include/header.html'); ?>
+<div id="anchor" class="header inc:/include/header.html"></div>
 
 <div class = "body-content">
 
@@ -56,14 +57,15 @@
 		20/4/2015 - <a href="updates.html"><i>(Aggiornamenti)</i></a></p>
 	
 	
-	{% include footer.html %}
 
-	
+
+	<div id="footer" class="footer inc:/include/footer.html"></div>
 	</div>
 </div>
 
 
 <script type = "text/javascript" src = "/prd-ita/include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.inc-7.js"></script>
 <script type = "text/javascript" src = "/prd-ita/include/js/jquery.cookie.js"></script>
 <script type = "text/javascript" src = "/prd-ita/include/js/prd-jquery.js"></script>
 <script type = "text/javascript" src = "/prd-ita/include/js/prd-scripts.js"></script>

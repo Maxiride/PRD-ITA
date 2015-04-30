@@ -1,10 +1,4 @@
----
-
----
-
 <!DOCTYPE html>
-
-<html>
 
 <head>
 	<meta charset = "utf-8">
@@ -13,9 +7,8 @@
 	<link rel = "stylesheet" type = "text/css" href = "../include/prd-stylesheet.css" />
 </head>
 
-{% include header.html %}
-
 <body>
+<div id="anchor" class="header inc:../include/header.html"></div>
 
 <div class = "body-content">
 
@@ -166,9 +159,9 @@
 		
 		<h2 id="generating-ability-scores">Generare i punti caratteristica</h2>
 		<p>Ci sono diversi metodi differenti per generare i <a href="#ability-scores" >punteggi caratteristica</a>. Ciascuno di questi metodi dà un livello differente di flessibilità e di casualità alla creazione del personaggio. I modificatori razziali (ossia gli aggiustamenti ai <a href="#ability-scores" >punteggi caratteristica</a> dati dalla razza del personaggio, vedi <a href="races.html">Razze</a>) si applicano solo dopo aver generato i punteggi.</p>
-			<p><b>Standard:</b> Tirate 4d6, scartate il risultato più basso e sommare gli altri tre insieme. Segnate questo totale e ripetete il procedimento fino a generare sei numeri. Assegnate questi totali ai vostri <a href="#ability-scores" >punteggi caratteristica</a> come volete. Questo metodo è meno casuale di quello classico e contribuisce a creare personaggi con <a href="#ability-scores" >punteggi caratteristica</a> superiori alla media.
-			<p><b>Classico:</b> Tirate 3d6 e sommate i dadi insieme. Segnate questo totale e ripetere il procedimento fino a generare sei numeri. Assegnate questi risultati ai vostri <a href="#ability-scores" >punteggi caratteristica</a>  come volete. Questo metodo è abbastanza casuale ed alcuni personaggi avranno caratteristiche chiaramente superiori. Questa casualità può andare ancora oltre, con i totali assegnati ai <a href="#ability-scores" >punteggi caratteristica</a> specifici nell’ordine in cui sono tirati. I personaggi generati con questo metodo sono difficili da conformarsi a concetti predeterminati, poiché i loro punteggi potrebbero non essere sufficienti per alcune classi o personalità, e dovrebbero essere ideati in base ai <a href="#ability-scores" >punteggi caratteristica</a> .
-			<p><b>Eroico:</b> Tirate 2d6 e aggiungete 6 alla somma dei dadi. Segnate questo totale e ripetere il procedimento fino a generare sei numeri. Assegnate questi totali ai <a href="#ability-scores" >punteggi caratteristica</a> come volete. Questo metodo è meno casuale del metodo standard e genera personaggi con punteggi decisamente superiori alla media.
+			<p><b>Standard:</b> Tirate 4d6, scartate il risultato più basso e sommare gli altri tre insieme. Segnate questo totale e ripetete il procedimento fino a generare sei numeri. Assegnate questi totali ai vostri <a href="#ability-scores" >punteggi caratteristica</a> come volete. Questo metodo è meno casuale di quello classico e contribuisce a creare personaggi con <a href="#ability-scores" >punteggi caratteristica</a> superiori alla media.</p>
+			<p><b>Classico:</b> Tirate 3d6 e sommate i dadi insieme. Segnate questo totale e ripetere il procedimento fino a generare sei numeri. Assegnate questi risultati ai vostri <a href="#ability-scores" >punteggi caratteristica</a>  come volete. Questo metodo è abbastanza casuale ed alcuni personaggi avranno caratteristiche chiaramente superiori. Questa casualità può andare ancora oltre, con i totali assegnati ai <a href="#ability-scores" >punteggi caratteristica</a> specifici nell’ordine in cui sono tirati. I personaggi generati con questo metodo sono difficili da conformarsi a concetti predeterminati, poiché i loro punteggi potrebbero non essere sufficienti per alcune classi o personalità, e dovrebbero essere ideati in base ai <a href="#ability-scores" >punteggi caratteristica</a> .</p>
+			<p><b>Eroico:</b> Tirate 2d6 e aggiungete 6 alla somma dei dadi. Segnate questo totale e ripetere il procedimento fino a generare sei numeri. Assegnate questi totali ai <a href="#ability-scores" >punteggi caratteristica</a> come volete. Questo metodo è meno casuale del metodo standard e genera personaggi con punteggi decisamente superiori alla media.</p>
 			<p><b>Riserva di Dadi: </b>Ogni personaggio ha una riserva di 24d6 da assegnare alle sue caratteristiche. Prima di tirare i dadi, il giocatore seleziona il numero di dadi da abbinare ad ogni punteggio, con un minimo di 3d6 per ogni caratteristica. Una volta assegnati i dadi, il giocatore tira i dadi per ogni gruppo e somma i totali dei tre risultati migliori. Se si pre-diligono personaggi più potenti, il GM dovrebbe aumenta-re il numero totale dei dadi a 28. Questo metodo crea perso-naggi simili a quelli del metodo standard.</p>
 <table id="table-1-1-ability-score-costs"><caption>Tabella: Costi delle Caratteristiche</caption>
 <thead><tr><th>Punteggio</th><th>Punti</th></tr></thead>
@@ -271,23 +264,23 @@
 				<p><a href="classes/bard.html#bard" >Bardi</a>, <a href="classes/paladin.html#paladin" >Paladini</a>, e <a href="classes/sorcerer.html#sorcerer" >Stregoni</a> acquisiscono incantesimi bonus n base al loro punteggio di Carisma. Il punteggio minimo di Carisma necessario per lanciare un incantesimo da bardo, paladino o stregone è 10 + il livello dell’incantesimo.</p>
 				
 				
-	{% include footer.html %}
-	
+
+	<div id="footer" class="footer inc:/include/footer.html"></div>
 	</div>
 </div>
 
+
 <script type = "text/javascript" src = "../include/js/jquery-1.10.2.min.js"></script>
+<script type = "text/javascript" src = "../include/js/jquery.inc-7.js"></script>
 <script type = "text/javascript" src = "../include/js/jquery.cookie.js"></script>
 <script type = "text/javascript" src = "../include/js/prd-jquery.js"></script>
 <script type = "text/javascript" src = "../include/js/prd-scripts.js"></script>
 <script type = "text/javascript">var globalTitle="Getting Started",globalNavPath=[];</script>
 <script type = "text/javascript">
-$(function () {
+$(function () {	
 	if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			highlightNavLocation(globalNavPath);
 		}
 	});
 </script>
 </body>
-
-</html>
