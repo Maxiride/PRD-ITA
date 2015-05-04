@@ -1,0 +1,20 @@
+<head>
+<script type = "text/javascript" src = "include/js/jquery-1.10.2.min.js"></script>
+
+	<script>
+		here = window.location.pathname.indexOf('prd-ita');
+		document.write(here + '<br>');
+		
+		
+		var hereArray = window.location.pathname.split('');
+		var newPathname = "";
+		
+		for (i = 0; i < here+8; i++) {
+		  newPathname += hereArray[i];
+		}
+		document.write(newPathname);
+		
+	</script>
+</head>
+
+

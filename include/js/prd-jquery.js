@@ -23,6 +23,7 @@ $(function(){
 		$(this).toggleClass('active').next('ul').toggleClass('active');
 	});
 
+	/* tiene aperto il menu al cambio di pagina */
 	anchor.on('click', 'a[href*=#]:not([href=#])', function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			var target = $(this.hash);

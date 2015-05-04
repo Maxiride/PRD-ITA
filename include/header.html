@@ -1,4 +1,26 @@
 <!DOCTYPE html>
+<head>
+	<base id="host" href="" />
+	<script>
+		/* Dove sono? */
+		here = window.location.pathname.indexOf('prd-ita');
+		
+		/* Togli ciò che non serve e tieni fino prd-ita/*/
+		var hereArray = window.location.pathname.split('');
+		var newPathname = "";
+		
+		for (i = 0; i < here+8; i++) {
+		  newPathname += hereArray[i];
+		}
+		/*
+		document.write(here + '<br>');
+		document.write(newPathname);
+		*/
+		
+		$("#host").attr("href", newPathname);
+	</script>
+</head>
+
 <!-- Chiamata a footnotes 
 <script src="include/js/footnotes.js" type="text/javascript"></script>
 -->
@@ -54,8 +76,8 @@
 				<li class = "has-subnav">
 					<a href = "#">Manuale Base</a>
 					<ul class = "level-2">
-						<li><a href = "gettingStarted.html">Per iniziare</a></li>
-						<li><a href = "races.html">Razze</a></li>
+						<li><a href = "core/gettingStarted.html">Per iniziare</a></li>
+						<li><a href = "core/races.html">Razze</a></li>
 						<li><a href = "classes.html">Classi</a></li>
 						<li><a href = "usingSkills.html">Abilitàs</a></li>
 						<li><a href = "skillDescriptions.html">Descrizione delle Abilità</a></li>
